@@ -1,0 +1,6 @@
+<h1>Our Hotels</h1>
+<ul class="list-unstyled">
+    <% for event in @events %>
+        <li> <a href="/events/<%=event[:id] %>" > <%= event[:title] %> </a> </li>
+    <% end %>
+</ul>
