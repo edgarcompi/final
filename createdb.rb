@@ -15,9 +15,8 @@ end
 DB.create_table! :rsvps do
   primary_key :id
   foreign_key :event_id
+  foreign_key :user_id
   Number :going
-  String :name
-  String :email
   String :comments, text: true
 end
 
